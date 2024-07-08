@@ -5,107 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
-        <div class="relative z-50 p-4">
-            <div class="flex">
+        <div class="relative z-50 p-8">
+            <div class="flex absolute justify-start md:invisible">
                 <img src="../../assets/img/menu.svg" width="30px" alt="">
             </div>
-            <div class="invisible">
-                <div>
-                    <input class="bg-gray-500" placeholder="search" type="search" name="search1" id="search">
-                </div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            Home Entertainment
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Computers
-                        </a>
-                    </li>
-                        <li>
-                            <a href="#">
-                                Phones & Tablets
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Gaming & VR
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Audio & Music
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Cameras
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Wearables
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Drones
-                            </a>
-                        </li>
-                </ul>
-                <h3>Explore More</h3>
-                <ul>
-                    <li>
-                    <a href="#">
-                        NEW Arrivals
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Best Deals
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        How It Works
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Contact
-                    </a>
-                </li>
-                </ul>
-                <span>
-                    
-                </span>
-                <span>
-
-                </span>
-                <span>
-
-                </span>
-                <span>
-
-                </span>
-            </div>
-            <div class="logo">
-                <a href="./index.html">
+            <div class="md:flex justify-between">
+            <div class="md:flex">
+            <div class=" flex justify-center">
+                <a class="h-fit " href="./index.html">
                 <img src="../../assets/img/logo.svg" alt="">
             </a>
-            
+        </div>
+            <nav class=" flex invisible md:visible ml-10 ">
+                
+            <ul class="flex gap-10">
+                <li>
+                    <a class="relative before:absolute before:top-full before:left-0 before:w-0 before:h-1 before:duration-300 before:bg-indigo-600 hover:before:w-full" href="#">Categories</a>
+                </li>
+                <li>
+                    <a class="relative before:absolute before:top-full before:left-0 before:w-0 before:h-1 before:duration-300 before:bg-indigo-600 hover:before:w-full" href="#">Best Deals</a>
+                </li>
+                <li>
+                    <a class="relative before:absolute before:top-full before:left-0 before:w-0 before:h-1 before:duration-300 before:bg-indigo-600 hover:before:w-full" href="#">How It Works</a>
+                </li>
+            </ul>
+        </div>
+            <div class="invisible md:visible relative">
+                <input class="bg-gray-200 p-3 pl-12" placeholder="Search" type="search" name="search" id="search">
+                <img src="../../assets/img/search.svg" alt="" class="absolute left-3 top-3 w-5 h-5">
             </div>
+            </nav>
+        </div>
         </div>
     </header>
 </body>
