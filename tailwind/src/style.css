@@ -600,8 +600,17 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -630,14 +639,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .flex {
@@ -727,6 +728,10 @@ video {
 
 .overflow-auto {
   overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded {
@@ -833,6 +838,11 @@ video {
   padding: 28px;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -843,8 +853,17 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pl-12 {
   padding-left: 3rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-left {
@@ -863,6 +882,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-\[34px\] {
@@ -890,6 +914,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .tracking-tight {
@@ -935,8 +963,16 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .before\:absolute::before {
@@ -1009,6 +1045,18 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:invisible {
+    visibility: hidden;
+  }
+
+  .sm\:absolute {
+    position: absolute;
+  }
+
+  .sm\:relative {
+    position: relative;
+  }
+
   .sm\:left-0 {
     left: 0px;
   }
@@ -1017,8 +1065,44 @@ video {
     right: 0px;
   }
 
+  .sm\:top-0 {
+    top: 0px;
+  }
+
+  .sm\:top-\[150px\] {
+    top: 150px;
+  }
+
   .sm\:top-\[25\%\] {
     top: 25%;
+  }
+
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .sm\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .sm\:col-start-4 {
+    grid-column-start: 4;
+  }
+
+  .sm\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .sm\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .sm\:row-start-3 {
+    grid-row-start: 3;
+  }
+
+  .sm\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .sm\:flex {
@@ -1039,6 +1123,10 @@ video {
 
   .sm\:w-\[500px\] {
     width: 500px;
+  }
+
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -1099,11 +1187,147 @@ video {
     visibility: hidden;
   }
 
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:top-0 {
+    top: 0px;
+  }
+
+  .md\:top-\[150px\] {
+    top: 150px;
+  }
+
+  .md\:top-\[\] {
+    top: ;
+  }
+
+  .md\:top-\[80\%\] {
+    top: 80%;
+  }
+
+  .md\:top-\[150p\] {
+    top: 150p;
+  }
+
+  .md\:top-\[60\%\] {
+    top: 60%;
+  }
+
+  .md\:top-\[70\%\] {
+    top: 70%;
+  }
+
+  .md\:top-\[65\%\] {
+    top: 65%;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .md\:col-start-4 {
+    grid-column-start: 4;
+  }
+
+  .md\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .md\:row-start-3 {
+    grid-row-start: 3;
+  }
+
+  .md\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:h-\[48px\] {
     height: 48px;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:items-end {
+    align-items: flex-end;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .md\:opacity-100 {
+    opacity: 1;
+  }
+
+  .md\:opacity-0 {
+    opacity: 0;
+  }
+
+  .md\:duration-500 {
+    transition-duration: 500ms;
+  }
+
+  .md\:duration-200 {
+    transition-duration: 200ms;
+  }
+
+  .group\/card-2:hover .md\:group-hover\/card-2\:visible {
+    visibility: visible;
+  }
+
+  .group\/card-2:hover .md\:group-hover\/card-2\:opacity-100 {
+    opacity: 1;
+  }
+
+  .group\/card-1:hover .md\:group-hover\/card-1\:opacity-0 {
+    opacity: 0;
+  }
+
+  .group\/card-1:hover .md\:group-hover\/card-1\:opacity-100 {
+    opacity: 1;
+  }
+
+  .group\/card-3:hover .md\:group-hover\/card-3\:opacity-100 {
+    opacity: 1;
+  }
+
+  .group\/card-4:hover .md\:group-hover\/card-4\:opacity-100 {
+    opacity: 1;
+  }
+
+  .group\/card-5:hover .md\:group-hover\/card-5\:opacity-100 {
+    opacity: 1;
+  }
+
+  .group\/card-6:hover .md\:group-hover\/card-6\:opacity-100 {
+    opacity: 1;
   }
 }
