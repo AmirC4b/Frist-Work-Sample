@@ -595,6 +595,11 @@ video {
   margin-right: 0.5rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -633,11 +638,6 @@ video {
 .my-\[140px\] {
   margin-top: 140px;
   margin-bottom: 140px;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .mb-2 {
@@ -777,28 +777,16 @@ video {
   width: 600px;
 }
 
+.w-\[70px\] {
+  width: 70px;
+}
+
 .w-\[85\%\] {
   width: 85%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[70px\] {
-  width: 70px;
 }
 
 .max-w-full {
@@ -811,10 +799,6 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -885,20 +869,16 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
 .rounded-sm {
   border-radius: 0.125rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .border-2 {
@@ -949,11 +929,6 @@ video {
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .bg-slate-400 {
@@ -1135,6 +1110,10 @@ video {
   padding-top: 140px;
 }
 
+.pl-20 {
+  padding-left: 5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1245,11 +1224,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-slate-100 {
-  --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1457,20 +1431,8 @@ video {
     margin-top: 0px;
   }
 
-  .sm\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .sm\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .sm\:mt-6 {
     margin-top: 1.5rem;
-  }
-
-  .sm\:mr-5 {
-    margin-right: 1.25rem;
   }
 
   .sm\:block {
@@ -1544,10 +1506,6 @@ video {
 
   .sm\:flex-row-reverse {
     flex-direction: row-reverse;
-  }
-
-  .sm\:flex-col {
-    flex-direction: column;
   }
 
   .sm\:items-start {
